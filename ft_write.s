@@ -10,8 +10,7 @@ ft_write:
 	ret
 .error:
 	neg rax
-	mov rdi, rax
-	push rdi
+	push rax
 	call __errno_location wrt ..plt
 	pop rdi
 	mov [rax], edi

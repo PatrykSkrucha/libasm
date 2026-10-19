@@ -11,13 +11,12 @@ ft_strdup:
 	mov rdi, rax
 	call malloc wrt ..plt
 	cmp rax, 0
-	jz .malloc_error
+	je .malloc_error
 	mov rdi, rax
 	mov rsi, [rsp]
 	call ft_strcpy
 	pop rdi
 	ret
-
 .malloc_error:
 	pop rdi
 	mov rax, 0

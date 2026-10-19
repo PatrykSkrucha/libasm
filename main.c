@@ -43,8 +43,8 @@ int main()
 		printf(GREEN "\n\nft_strcmp" RESET "\n");
 		
 
-		const char *a[] = {"Hello", "Hello", "Hell", "Hello", "abc", NULL};
-		const char *b[] = {"Hello", "World", "Hello", "Hell", "abd", NULL};
+		const char *a[] = {"Hello", "Hello", "Hell", "Hello", "abc", "\xff", NULL};
+		const char *b[] = {"Hello", "World", "Hello", "Hell", "abd", "a", NULL};
 		for (int i = 0; a[i]; i++)
 		{
 			int mine = sign(ft_strcmp(a[i], b[i]));

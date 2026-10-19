@@ -3,7 +3,6 @@ global ft_strcpy
 
 ft_strcpy:
 	mov rax, rdi
-
 .loop:
 	mov dl, [rsi]
 	mov [rdi], dl
